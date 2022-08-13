@@ -46,7 +46,7 @@ const handleReset=()=>{
      {isStart?
      <div>
      <div className="inner_div">
-        <h1 style={{color:(heading=='Select Number'?'black':'red')}}>{heading}</h1>
+        <h1 style={{color:(heading==='Select Number'?'black':'red')}}>{heading}</h1>
         {numbers.map((value)=>{
             return(
              <button className="btnValue" style={{color:'white', backgroundColor:(selectValue===value?'green':'black')}} onClick={()=>handleValue(value)}>{value}</button>
